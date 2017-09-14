@@ -1,0 +1,33 @@
+[08-Feb-2015 19:15:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in C:\www\public\sdk\frontend\profile\index.php on line 18
+[08-Feb-2015 19:15:15 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in C:\www\public\sdk\frontend\profile\index.php on line 18
+[08-Feb-2015 19:15:16 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in C:\www\public\sdk\frontend\profile\index.php on line 18
+[08-Feb-2015 22:29:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:23 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:25 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:35 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:37 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:39 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:42 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:48 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:49 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:50 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:51 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:52 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[08-Feb-2015 22:29:58 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\frontend\profile\index.php on line 33
+[09-Feb-2015 00:15:55 Europe/Moscow] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\www\public\sdk\frontend\profile\get_select_algorithms.php on line 20
+[09-Feb-2015 12:09:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected '?>' in C:\www\public\sdk\frontend\profile\index.php on line 180
+[09-Feb-2015 15:31:51 Europe/Moscow] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 251
+[09-Feb-2015 15:35:04 Europe/Moscow] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 251
+[09-Feb-2015 15:36:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 268
+[09-Feb-2015 16:55:47 Europe/Moscow] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 17 in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 49
+[09-Feb-2015 16:56:20 Europe/Moscow] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 17 in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 50
+[09-Feb-2015 16:56:51 Europe/Moscow] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 17 in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 50
+[09-Feb-2015 16:59:58 Europe/Moscow] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 17 in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 50
+[09-Feb-2015 17:32:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\www\public\sdk\frontend\profile\create_page_preview.php on line 15
+[09-Feb-2015 17:32:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\www\public\sdk\frontend\profile\create_page_preview.php on line 15
+[09-Feb-2015 17:41:06 Europe/Moscow] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 17 in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 50
+[09-Feb-2015 17:43:19 Europe/Moscow] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 17 in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 50
+[11-Feb-2015 17:20:29 Europe/Moscow] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 570
+[11-Feb-2015 17:21:52 Europe/Moscow] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in C:\www\public\sdk\frontend\profile\get_algorithm.php on line 574

@@ -1,0 +1,6 @@
+[28-Jan-2015 17:59:37 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in C:\www\public\sdk\adm\adm_accounts\get_profile_admin_information.php on line 205
+[28-Jan-2015 17:59:43 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in C:\www\public\sdk\adm\adm_accounts\get_profile_admin_information.php on line 205
+[31-Jan-2015 13:13:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\adm\adm_accounts\delete_adm_account.php on line 59
+[31-Jan-2015 13:14:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\adm\adm_accounts\delete_adm_account.php on line 59
+[31-Jan-2015 13:14:44 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in C:\www\public\sdk\adm\adm_accounts\delete_adm_account.php on line 59
+[06-Feb-2015 23:20:59 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\www\public\sdk\adm\utils\authorized.php on line 63

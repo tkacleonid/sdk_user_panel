@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Пользовательская панель программного комплекса СДК-8</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+      
+      	<script type="text/javascript" src="tinymce4/js/tinymce/tinymce.min.js"></script>
+		<script type="text/javascript" src="tinymce4/js/tinymce/jquery.tinymce.min.js"></script>
+
+      	
+		<script type="text/javascript">
+			$(function(){
+				
+				fn_tinymce_for_send_common_mail();
+			});
+			
+			function fn_tinymce_for_send_common_mail()
+{
+	tinymce.init({
+		selector: "#textarea_send_common_message_dialog",
+		theme: "modern",
+		
+		plugins: [
+					"advlist autolink lists link image charmap print preview hr anchor pagebreak",
+					"searchreplace wordcount visualblocks visualchars code fullscreen",
+					"insertdatetime media nonbreaking save table contextmenu directionality",
+					"emoticons template paste textcolor colorpicker textpattern "
+		],
+		toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+		toolbar2: "print preview media | forecolor backcolor emoticons ",
+		image_advtab: true,
+		dialog_type : "modal",
+		templates: [
+					{title: 'Test template 1', content: 'Test 1'},
+					{title: 'Test template 2', content: 'Test 2'}
+				]
+		});
+}
+
+
+		</script>
+		
+	</head>
+	<body>
+	<table style="width:100%;">
+      <tr>
+        <td colspan=2>
+          <p style="color:red;" id="error_send_common_message_dialog"></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:300px; background:#d5ac5d;border:1px solid #443113;padding:5px;">
+          Тема сообщения:
+        </td>
+        <td style="border:1px solid #443113;text-align:center;padding:5px;">
+          <input id="theme_send_common_message_dialog" style="width:90%; ">
+        </td>
+      </tr>
+      <tr>
+        <td style="width:300px; background:#d5ac5d;border:1px solid #443113;padding:5px;">
+          Ваше имя:
+        </td>
+        <td style="border:1px solid #443113;text-align:center;padding:5px;">
+          <input id="name_send_common_message_dialog" style="width:90%; ">
+        </td>
+      </tr>
+      <tr>
+        <td style="width:300px; background:#d5ac5d;border:1px solid #443113;padding:5px;">
+          Ваш E-mail:
+        </td>
+        <td style="border:1px solid #443113;text-align:center;padding:5px;">
+          <input id="email_from_send_common_message_dialog" style="width:90%; ">
+        </td>
+      </tr>
+      <tr>
+        <td style="width:300px; background:#d5ac5d;border:1px solid #443113;padding:5px;">
+          Текст сообщения:
+        </td>
+        <td style="border:1px solid #443113;text-align:center;padding:5px;">
+          <textarea id="textarea_send_common_message_dialog" style="height:150px;"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="text-align:center;">
+          <button id="btn_send_common_email" onclick="fn_send_common_email();">Отправить</button>
+        </td>
+      </tr>
+    </table>
+	</body>	
+</html>
+

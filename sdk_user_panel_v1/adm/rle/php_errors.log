@@ -1,0 +1,19 @@
+[02-Feb-2015 16:10:06 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'images' (T_STRING) in C:\www\public\sdk\adm\express_algorithms\get_type_boards.php on line 68
+[03-Feb-2015 09:48:57 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\www\public\sdk\adm\utils\authorized.php on line 63
+[04-Feb-2015 10:58:52 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in C:\www\public\sdk\adm\express_algorithms\get_type_board_full_information.php on line 61
+[04-Feb-2015 10:58:59 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in C:\www\public\sdk\adm\express_algorithms\get_type_board_full_information.php on line 61
+[04-Feb-2015 10:59:04 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in C:\www\public\sdk\adm\express_algorithms\get_type_board_full_information.php on line 61
+[04-Feb-2015 10:59:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in C:\www\public\sdk\adm\express_algorithms\get_type_board_full_information.php on line 61
+[04-Feb-2015 11:00:01 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in C:\www\public\sdk\adm\express_algorithms\get_type_board_full_information.php on line 61
+[04-Feb-2015 11:01:00 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in C:\www\public\sdk\adm\express_algorithms\get_type_board_full_information.php on line 61
+[04-Feb-2015 14:13:42 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\express_algorithms\get_type_boards.php on line 82
+[04-Feb-2015 14:23:19 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\express_algorithms\get_type_boards.php on line 110
+[06-Feb-2015 15:56:00 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\www\public\sdk\adm\utils\authorized.php on line 63
+[06-Feb-2015 23:00:57 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\www\public\sdk\adm\utils\authorized.php on line 63
+[07-Feb-2015 02:15:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\www\public\sdk\adm\express_algorithms\check_algorithm_information_for_add.php on line 17
+[10-Feb-2015 10:43:30 Europe/Moscow] PHP Parse error:  syntax error, unexpected '*' in C:\www\public\sdk\adm\express_algorithms\get_express_algorithms.php on line 334
+[10-Feb-2015 10:48:46 Europe/Moscow] PHP Parse error:  syntax error, unexpected '*' in C:\www\public\sdk\adm\express_algorithms\get_express_algorithms.php on line 325
+[10-Feb-2015 10:49:36 Europe/Moscow] PHP Warning:  mysql_query() expects at least 1 parameter, 0 given in C:\www\public\sdk\adm\express_algorithms\get_express_algorithms.php on line 133
+[15-Feb-2015 01:57:57 Europe/Moscow] PHP Warning:  mysql_query(): Unknown column 'key_rle_item' in 'where clause' in C:\www\public\sdk\adm\rle\add_new_rle_item_information.php on line 151
+[15-Feb-2015 02:00:50 Europe/Moscow] PHP Warning:  mysql_query(): Unknown column 'key_rle_item' in 'where clause' in C:\www\public\sdk\adm\rle\add_new_rle_item_information.php on line 152
+[17-Feb-2015 18:08:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected '?>' in C:\www\public\sdk\adm\rle\get_edit_rle_item.php on line 255

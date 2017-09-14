@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Пользовательская панель программного комплекса СДК-8</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+
+		<script type="text/javascript" src="../../scripts/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="../../styles/default/jquery-ui/jquery-ui.js"></script>
+		
+		<link rel="StyleSheet" type="text/css" href="../../styles/default/main.css">
+		<link rel="StyleSheet" type="text/css" href="../../styles/default/jquery-ui/jquery-ui.min.css">
+		<link rel="StyleSheet" type="text/css" href="../../styles/default/jquery-ui/jquery-ui.theme.min.css">
+		<link rel="StyleSheet" type="text/css" href="../../styles/default/jquery-ui/jquery-ui.structure.min.css">
+		<link rel="shortcut icon" href="../../styles/images/dia_logo_icon.gif">
+		<link rel="StyleSheet" type="text/css" href="../../scripts/js/jquery.qtip.min.css">
+
+		<script type="text/javascript" src="../../scripts/js/jquery.qtip.min.js"></script>
+		 <style>
+		.custom-combobox 
+		{
+			position: relative;
+			display: inline-block;
+		}
+		.custom-combobox-toggle 
+		{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin-left: -1px;
+			padding: 0;
+		}
+		.custom-combobox-input
+		{
+			margin: 0;
+			padding: 5px 10px;
+		}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+			  $.widget("ui.dialog", $.ui.dialog, {
+					_allowInteraction: function(event) {
+							return !!$(event.target).closest(".mce-container").length || this._super( event );
+						}
+				});
+				
+				$('#select_type_boards').get(0).selectedIndex = 0;$('#select_algorithms').get(0).selectedIndex = 0;				
+				
+				$('#list_left_menu').menu();
+						
+			});
+			
+			function fn_select_type_board(key_board)
+			{
+				if(key_board == 'none')
+				{
+					$('#select_td_type_boards').html("<select id='select_algorithms' onchange ='alert(this.value);' style='width:300px;'><option value='none' id='algorithm_none_selected' selected>Выберите алгоритм...</option></select>");
+				}
+				else
+				{
+					//fn_set_status_loading();
+                       
+					fn_set_status_loading();
+					jqXHR = $.post("./get_select_algorithms.php","key_type_board="+encodeURIComponent(key_board),fn_success_get_select_algorithms);
+					jqXHR.fail(function(){
+						fn_clear_status_loading();//$( "#error_enter_user_panel_dialog" ).dialog("open");
+					});
+			
+				}
+			}
+			
+			function fn_success_get_select_algorithms(data,textStatus,jqXHR)
+			{
+				fn_clear_status_loading();
+				$('#select_td_type_boards').html(data)
+			}
+			
+			function fn_select_algorithm(key_algorithm)
+			{
+				if(key_algorithm == 'none')
+				{
+					//$('#select_td_type_boards').html("<select id='select_algorithms' onchange ='alert(this.value);' style='width:300px;'><option value='none' id='algorithm_none_selected' selected>Выберите алгоритм...</option></select>");
+				}
+				else
+				{
+					//fn_set_status_loading();
+                       
+                    if($(".ac_"+key_algorithm).length > 0)
+					{
+						$(".ac_"+key_algorithm).remove();
+					}
+					fn_set_status_loading();
+					jqXHR = $.post("./get_algorithm.php","key_algorithm="+encodeURIComponent(key_algorithm),fn_success_get_algorithm);
+					jqXHR.fail(function(){
+						fn_clear_status_loading();//$( "#error_enter_user_panel_dialog" ).dialog("open");
+					});
+			
+				}
+			}
+			
+			function fn_success_get_algorithm(data,textStatus,jqXHR)
+			{
+				//fn_clear_status_loading();
+				if($('#accordion_algorithms').accordion('instance'))
+				{
+					$('#accordion_algorithms').accordion('destroy');
+				}
+				$('#accordion_algorithms').html(""+data+$('#accordion_algorithms').html());
+				$(function(){
+					$('#accordion_algorithms').accordion();		
+				});
+				
+				$(function(){
+				/*
+					if($("#accordion_algorithms .btn").button("instance"))
+					{
+						$("#accordion_algorithms .btn").button("destroy");
+					}
+					
+					if($("#accordion_algorithms .btn_close").button("instance"))
+					{
+						$("#accordion_algorithms .btn_close").button("destroy");
+					}
+				*/	
+					$("#accordion_algorithms .btn_"+($('#select_algorithms').val())).button();
+					$("#accordion_algorithms .btn_close_"+($('#select_algorithms').val())).button({
+						icons:{
+							primary:"ui-icon-close",
+						},
+						text:false,
+					});
+					$('#accordion_algorithms div,#accordion_algorithms h3').css('height','auto');
+					
+				});
+				fn_clear_status_loading();
+										
+			}
+		</script>
+		</head>
+<body>
+
+	<script type="text/javascript">
+		$(function(){				
+			$("#rus_lang_header").qtip({
+				content: {
+					text: 'Русский',
+				},
+				show: {
+					when: 'mouseover focus',
+					solo: false,
+					ready : false
+				},
+				style: {
+					tip: true,
+					border: {
+						width: 0,
+						radius: 3
+					},
+					classes: "qtip-dark",
+					width: 100
+				},
+				position: {
+					my: 'top right',  // Position my top left...
+					at: 'bottom center' // at the bottom right of...
+				}
+			});
+					
+			$("#logout_header").qtip({
+				content: {
+					text: 'Выход из пользовательской панели',
+				},
+				show: {
+					when: 'mouseover focus',
+					solo: false,
+					ready : false
+				},
+				style: {
+					tip: true,
+					border: {
+						width: 0,
+						radius: 3
+					},
+					classes: "qtip-dark",
+					width: 300
+				},
+				position: {
+					my: 'top right',  // Position my top left...
+					at: 'bottom center' // at the bottom right of...
+				}
+			});
+			
+			$('#accordion_algorithms').accordion();
+			
+			
+						
+			
+		});
+		
+		function fn_set_status_loading()
+		{
+			var zi = 0;
+			var i = 0; 
+			var dlg = $(".ui-dialog");
+			for(i=0; i < dlg.length; i++)
+			{
+				if(zi < dlg.eq(i).zIndex())
+				{
+					zi = dlg.eq(i).zIndex();
+				}
+			}
+			
+			$("#front_hide").css("z-index",zi+1);
+			$("#status_loading").css("z-index",zi+2);
+			$("#front_hide").show();
+			$("#status_loading").css("display","block");
+		}
+							  
+		function fn_clear_status_loading()
+		{
+			$("#front_hide").css("z-index","100");
+			$("#status_loading").css("z-index","100");
+			$("#status_loading").css("display","none");
+			$("#front_hide").hide();
+		}
+
+	</script>
+	<table cellspacing=0 cellpadding=0 id="body">
+		<tr>
+			<td>
+				<table class="header_1" cellspacing=0 cellpadding=0>
+					<tr style="padding:0px;">
+						<td style="padding:0px;vertical-align:middle;">
+							<div id="welcome_admin" style="vertical-align:middle;height:100%;">
+								Добро пожаловать, <a href='../my_profile/'>админ</a>							</div>
+						</td>
+						<td style="text-align:center;vertical-align:middle;padding:0px;float:right;">
+							<table style="width:100%;height:100%;" cellspacing=0 cellpadding=0>
+								<tr>
+									<td>
+											
+									</td>
+									<td id="rus_lang_header" style="text-align:right;background:#443113;color:white;cursor:pointer;border-left:1px solid #efec9f;padding: 0px 5px;"  onmouseover="this.style.background='#675423'" onmouseout="this.style.background='#443113'">
+										<a href='./index.php'><img src="../../styles/images/ru_lang_icon.gif" style="height: 20px;"></a>
+									</td>
+									<td id="logout_header" style="text-align:right;background:#443113;color:white;cursor:pointer;border-left:1px solid #efec9f;padding: 0px 5px;" onmouseover="this.style.background='#675423'" onmouseout="this.style.background='#443113'" onclick="document.location = './index.php?logout=1';">
+										<img src='../../styles/default/images/logout.png' height="100%">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+		<td>
+			<table style="height:1000px;width:100%;"; cellspacing=0 cellpadding=0>
+				<tr>
+					<td id="left_menu" style="vertical-align:top;">
+						<div id="block_company_information" style='height:130px;padding-top:10px;padding-bottom:10px;vertical-align:middle;color:#e3ddc9;'>
+								<img src="../../styles/images/dia_logo_light.gif" style="height: 110px;">
+								<!--ЗАО ДИАГНОСТИКА-->
+						</div>
+						<table id="block_menu" style='width:100%;' cellspacing=0 cellpadding=0>
+														<tr>
+								<td style='text-align:left;font-size:0.9em;'>
+									<ul id='list_left_menu' style='list-style:none;'>
+										<li style="color:white;border:1px solid #efec9f;background:#4f4221 url('../../styles/default/jquery-ui/images/ui-bg_diamond_10_4f4221_10x8.png');"  onmouseover="this.style.background = '#675423 url(../../styles/default/jquery-ui/images/ui-bg_diamond_25_675423_10x8.png)'; "     onmouseout="this.style.background = '#4f4221 url(../../styles/default/jquery-ui/images/ui-bg_diamond_10_4f4221_10x8.png)';">Мой профиль</li>
+										<li style="color:white;border:1px solid #efec9f;background:#4f4221 url('../../styles/default/jquery-ui/images/ui-bg_diamond_10_4f4221_10x8.png');"  onmouseover="this.style.background = '#675423 url(../../styles/default/jquery-ui/images/ui-bg_diamond_25_675423_10x8.png)'; "     onmouseout="this.style.background = '#4f4221 url(../../styles/default/jquery-ui/images/ui-bg_diamond_10_4f4221_10x8.png)';" >Алгоритмы экспресс-анализа</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td style="vertical-align:top;background:#FFFFFF;">
+						<table cellpadding=0 cellspacing=0 style="height:100%;color:#000;width:100%;background: #fbd08a url('../../styles/default/jquery-ui/images/ui-bg_diamond_8_fbd08a_10x8.png');">
+							<tr>
+								<td style="height:30px;color:#FFF; width:100%; background: #261803 url('../../styles/default/jquery-ui/images/ui-bg_diamond_8_261803_10x8.png'); font-weight: bold;font-size:1.2em; font-family: Arial;border-bottom:1px solid #efec9f;">
+									<table cellpadding=0 cellspacing=0>
+										<tr>
+										<!--
+											<td style=" width:30px; background:none;cursor:pointer;" onmouseover="this.style.background='#f7a585'" onmouseout="this.style.background='none'" >
+												<img src="../../styles/images/hide_sow_menu_icon.gif" style="height:30px; width:30px;" style=" width:30px; background:#f37e50;" title="Скрыть меню">
+											</td>-->
+											<td style="padding: 10px;">
+												Алгоритмы экспресс-анализа											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:top;background: #FFFFFF;">
+
+									<table style='width:100%;background:#675423;'>
+										<tr>
+											<td style="width:300px;padding:20px;">
+												<table>
+													<tr>
+														<td style='text-align:center;color:white;'>
+															Тип борта
+														</td>
+													</tr>
+													<tr>
+														<td style='text-align:center;'>
+															
+															<select id='select_type_boards' onchange ='fn_select_type_board(this.value);' style='width:300px;'>
+		<option value='none' id='type_board_none_selected' selected>Выберите тип борта...</option>
+		<option value='sdk_mi8t'>Ми-8Т</option><option value='sdk_mi8mtv'>Ми-8МТВ</option></select>															
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td>
+												<table>
+													<tr>
+														<td style='text-align:center;color:white;'>
+															Алгоритм
+														</td>
+													</tr>
+													<tr>
+														<td style='text-align:center;' id='select_td_type_boards'>
+															<select id='select_algorithms' onchange ='fn_select_algorithm(this.value);' style='width:300px;'>
+		<option value='none' id='algorithm_none_selected' selected>Выберите алгоритм...</option>
+		</select>														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+
+									<div id="accordion_algorithms">
+									<h3 class='ac_'>
+					<table style='width:100%;'>
+						<tr>
+							<td>005</td>
+							<td style='text-align:right;'><button class='btn_close_' style='font-size:0.6em;' onclick="$('.ac_').remove();">Закрыть</button></td>
+						</tr>
+					</table>
+				</h3>
+				<div class='ac_'>
+					<table style='width:100%;'>
+						<tr><td style='font-size:0.6em;border-bottom:2px solid #40331c;padding-bottom:10px; '>
+							<button class='btn_' title='Показать/Скрыть содержание соответствующих пунктов регламентирующих документов' onclick="if($('#rle_item_mi8t_sdk_5').css('display') == 'none') {$('#rle_item_mi8t_sdk_5').show();} else {$('#rle_item_mi8t_sdk_5').hide();}; $('#accordion_algorithms div').css('height','auto');">rle</button></td></tr><tr><td><table id='rle_item_mi8t_sdk_5' style='width:100%;background:#bda377;display:table;'>
+									<tr style='display:none;'>
+										<td style='font-weight:bold;font-style:italic;'>
+											Наименование пункта РЛЭ:
+										</td>
+									</tr>
+									<tr style='display:none;'>
+										<td>
+											005
+										</td>
+									</tr>
+									<tr>
+										<td style='font-weight:bold;font-style:italic;'>
+											Содержание соответствующих пунктов регламентирующих документов:
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Включение системы перед запуском двигателей. РЛЭ п.8.19.1.3. (Нормальная эксплуатация).</p>
+<p>Рекомендуется включение и выключение СДК-8 производить выключателем САРП-12ДМ в положении РУЧН. Доп. к РЛЭ. п. 3. (Работа).</p>
+										</td>
+									</tr>
+								</table></tr></td></td>
+				</tr><tr>
+					<td style='font-weight:bold;font-style:italic;padding-top:10px;padding-bottom:10px;'>
+						Алгоритм:
+					</td>
+				</tr>
+				<tr style='padding-top:10px;padding-bottom:10px;'>
+					<td>
+						005
+					</td>
+				</tr>
+				<tr>
+					<td style='font-weight:bold;font-style:italic;padding-top:10px;padding-bottom:2px;'>
+						Содержание алгоритма:
+					</td>
+				</tr>
+				<tr>
+					<td style='padding-top:2px;'>
+						<p>Включение СДК-8 после запуска двигателей.</p>
+<p style="text-align: center;">S = ГТ<sub>СДК</sub></p>
+<p style="text-align: left;">ГТ<sub>СДК</sub> - готовность не сохранения информации о начале полета. Выставляется через 2 с после выполнения условия:</p>
+<p style="text-align: center;">(t &lt; 5) &amp; (N<sub>НВ</sub> &gt; 26),</p>
+<p style="text-align: left;">где t - время от начала записи параметров полета, с; N<sub>НВ</sub> - обороты несущего винта, %</p>
+<p><em><strong>Определяющие параметры:</strong></em></p>
+<p style="text-align: left;">Н<sub>Б</sub>, Н<sub>Г</sub>, V<sub>ПР</sub>, N<sub>НВ</sub></p>
+					</td>
+				</tr>
+			</table>
+		</div>									</div>
+									<script type='text/javascript'>
+												$('#accordion_algorithms .btn_'+('')).button();
+												$('#accordion_algorithms .btn_close_'+('')).button({
+														icons:{
+														primary:'ui-icon-close',
+													},
+													text:false,
+												});
+											</script>
+
+
+
+								
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div id="bottom">
+				<div id="footer_text">CMS SDK-8 2014 Leonid Y. Tkachenko. All rights reserved.</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<div class="ui-widget-overlay ui-front" style="z-index: 10000; display:none;" id="front_hide"></div>
+
+<div id="status_loading" style="display:none;">
+			<div id="loading">	
+			</div>
+</div>
+<div class="ui-widget-overlay ui-front" style="z-index: 10000; display:none;" id="front_hide"></div>
+
+</body>
+</html>

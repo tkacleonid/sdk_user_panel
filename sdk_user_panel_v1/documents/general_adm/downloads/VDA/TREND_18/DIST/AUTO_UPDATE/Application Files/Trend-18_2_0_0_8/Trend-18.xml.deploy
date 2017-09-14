@@ -1,0 +1,291 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Trend-18
+</name>
+</assembly>
+<members>
+<member name="T:Trend_18.dbBindingSourceTypeEngineEvents">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.add_aircraft_engine_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.add_aircraft_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.add_airplane_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.add_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.add_icon_small">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.ArrowIcons">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.axey">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.back_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.checkbox">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.checkbox_false">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.color_default">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.cursor_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.db_menu_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.delete">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.dia_logo">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.express_analysis_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.eye_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.folder">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.forward_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.hand">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.help_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.icon_apply">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.icon_apply1">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.line_chart_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.line_chart_icon1">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.plot_pan">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.preloader">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.preloader1">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.print_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.save_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.settings">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.SplashScreen">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.trend_logo">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.txt_export_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.update_icon">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.view_list">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.zoom_in">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Trend_18.My.Resources.Resources.zoom_out">
+	<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Trend_18.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_defectsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_report_for_add_fly_dataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_report_for_graph_mainDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_control_test_factory_for_crystal_reportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_defectsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_report_for_add_fly_dataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_report_for_graph_mainRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_control_test_factory_for_crystal_reportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_defectsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_report_for_add_fly_dataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_crystal_report_for_graph_mainRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet.tbl_control_test_factory_for_crystal_reportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.tbl_crystal_defectsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.tbl_crystal_report_for_add_fly_dataTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.tbl_crystal_report_for_graph_mainTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.tbl_control_test_factory_for_crystal_reportTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Trend_18.dbTrend_18DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Trend_18.dbTrend_18DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Trend_18.dbTrend_18DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.UpdateAll(Trend_18.dbTrend_18DataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Trend_18.dbTrend_18DataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Trend_18.clsTypeBoard">
+	<summary>
+ Данный класс инкапсулирует структуру  объекта типа борта
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Trend_18.mdSub.fnGetStatusInternetConnection">
+	<summary>
+ Проверка наличия сетевого подлючения пользователя
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

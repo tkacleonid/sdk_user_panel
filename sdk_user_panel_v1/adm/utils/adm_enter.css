@@ -1,0 +1,170 @@
+body, html{
+	width: 100%;
+	height: 100%;
+	padding:0px;
+	margin:0px;
+	font-family:Arial;
+	font-size: 0.9em;
+}
+
+#content{
+	width: 100%;
+	height: 100%;
+	min-width:1000px;
+	min-height:1000px;
+	background: #e5835c; /* Для старых браузров */
+    /*background: linear-gradient(to bottom right, #c6ced1, #353738);*/
+	
+
+}
+
+#block_login{
+	width: 500px;
+	height: 500px;
+	position:absolute;
+	left: 40%;
+	top:20%;
+	z-index:10;
+	border-radius:100px;
+	background:transparent;
+	border: 2px solid black;
+
+	background: trasparent;
+	
+}
+
+#title_block_login{
+	font-weight:bold;
+	font-size: 1.2em;
+	vertical-align: middle;
+	font-family: Arial;
+	width: 100%;
+}
+
+#logo{
+	vertical-align: middle;
+	width: 100%;
+	text-align:center;
+}
+
+#name{
+	vertical-align: middle;
+	width: 100%;
+	text-align:center;
+}
+
+#icon_person{
+	height: 30px;
+	width: 30px;
+	display:none;
+}
+
+#icon_lock{
+	height: 30px;
+	width: 30px;
+	display:none;
+}
+
+#textbox_login, #textbox_psw{
+	height: 20px;
+	width: 100%;
+}
+#form_enter{
+	padding: 10px;
+	padding-top: 30px;
+}
+
+
+#form_block_login{
+	
+	text-align:center;
+	border: 2px solid white;
+	margin: auto auto;
+	height: 400px;
+	margin: 30px;
+	background: blue transparent;
+	
+	border-radius:10px;
+	border: 0px solid white;
+}
+
+.login{
+	border-left: 30px solid transparent;
+	border-image: url('../../styles/images/icon-user.png') 0 0 0 30 ;
+	height: 25px;
+	border-radius: 8px;
+	margin: 5px;
+	width:250px;
+	
+}
+
+.password{
+	border-left: 30px solid transparent;
+	border-image: url('../../styles/images/icon-lock.png') 0 0 0 30;
+	height: 25px;
+	border-radius: 8px;
+	margin: 5px;
+	width:250px;
+	
+	
+}
+
+.div_table{
+	display:table;
+}
+
+.div_row{
+	display:table-row;
+}
+
+.div_cell{
+	display:table-cell;
+	margin-bottom: 10px;
+}
+
+#login_reg,#psw_reg,#last_name_reg,#name_reg,#patronym_reg,#company_reg,#prof_reg,#phone_reg,#email_reg,#jquery_btn{
+	width: 400px;
+	margin-left: 30px;
+	border:1px solid white;border-radius:8px;
+	height: 25px;
+}
+
+#form_block_reg{
+	
+}
+ .ui-widget-header
+ {
+	background: #e5835c;
+}
+			
+#form_block_reg
+{
+	background: #e5835c;
+	color:black;
+	min-width: 650px;
+	overflow: auto;
+}
+			
+.ui-dialog
+{
+	background: #e5835c;
+	border: none;
+}
+			
+#loading
+{
+	width: 100%;
+	height: 100%;
+	background: url('../../styles/images/status_loading.gif') center center no-repeat;
+}
+			
+#status_loading
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	z-index:1001;
+	display:none;
+}

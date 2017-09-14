@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="Trend_18.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="Trend_18.My.MySettings.dbTrend_18ConnectionString"
+            connectionString="data source=C:\Trend-18\DB\dbTrend_18.sqlite;Password=lbfuyjcnbrfDLFnhtyl"
+            providerName="System.Data.SQLite" />
+    </connectionStrings>
+    <system.diagnostics>
+        <sources>
+            <!-- В этой секции определяется конфигурация ведения журнала для My.Application.Log -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- Раскомментируйте следующую секцию для записи в журнал событий приложения -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information"/>
+        </switches>
+        <sharedListeners>
+            <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter"/>
+            <!-- Раскомментируйте следующую секцию и замените APPLICATION_NAME на имя своего приложения для записи в журнал событий приложения -->
+            <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+        </sharedListeners>
+    </system.diagnostics>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0"/>
+  </startup></startup>	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+
+		</assemblyBinding>
+	</runtime>
+    <userSettings>
+        <Trend_18.My.MySettings>
+            <setting name="PatchDB" serializeAs="String">
+                <value>C:\Trend-18\DB\dbTrend_18.sqlite</value>
+            </setting>
+            <setting name="number_of_points_for_slip" serializeAs="String">
+                <value>5</value>
+            </setting>
+            <setting name="operator_manual_type" serializeAs="String">
+                <value>local</value>
+            </setting>
+            <setting name="show_protocol_after_input" serializeAs="String">
+                <value>True</value>
+            </setting>
+        </Trend_18.My.MySettings>
+    </userSettings>
+</configuration>

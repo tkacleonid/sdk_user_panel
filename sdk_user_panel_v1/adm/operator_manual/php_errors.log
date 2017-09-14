@@ -1,0 +1,2 @@
+[23-Feb-2015 01:00:49 Europe/Moscow] PHP Warning:  require_once(./get_operator_manual_items.php): failed to open stream: No such file or directory in C:\www\public\sdk\adm\operator_manual\index.php on line 30
+[23-Feb-2015 01:00:49 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required './get_operator_manual_items.php' (include_path='.;C:\php\pear') in C:\www\public\sdk\adm\operator_manual\index.php on line 30

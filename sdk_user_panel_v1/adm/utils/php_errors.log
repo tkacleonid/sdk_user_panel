@@ -1,0 +1,24 @@
+﻿[04-Feb-2015 18:33:09 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_image_folder.php on line 10
+[04-Feb-2015 18:33:09 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_image_folder.php on line 11
+[04-Feb-2015 18:49:08 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_image_folder.php on line 10
+[04-Feb-2015 18:49:08 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_image_folder.php on line 11
+[04-Feb-2015 18:54:10 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_image_folder.php on line 10
+[04-Feb-2015 18:54:10 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_image_folder.php on line 11
+[05-Feb-2015 11:57:19 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\utils\get_files.php on line 107
+[05-Feb-2015 11:57:23 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\utils\get_files.php on line 107
+[05-Feb-2015 11:57:24 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\utils\get_files.php on line 107
+[05-Feb-2015 11:58:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\utils\get_files.php on line 107
+[05-Feb-2015 11:58:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\utils\get_files.php on line 107
+[05-Feb-2015 11:58:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\utils\get_files.php on line 107
+[05-Feb-2015 13:53:59 Europe/Moscow] PHP Parse error:  syntax error, unexpected '/' in C:\www\public\sdk\adm\utils\get_files.php on line 138
+[05-Feb-2015 14:24:19 Europe/Moscow] PHP Fatal error:  Function name must be a string in C:\www\public\sdk\adm\utils\get_files.php on line 18
+[05-Feb-2015 14:24:23 Europe/Moscow] PHP Fatal error:  Function name must be a string in C:\www\public\sdk\adm\utils\get_files.php on line 18
+[05-Feb-2015 14:24:43 Europe/Moscow] PHP Warning:  strripos() expects at least 2 parameters, 1 given in C:\www\public\sdk\adm\utils\get_files.php on line 18
+[05-Feb-2015 14:59:25 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\www\public\sdk\adm\utils\get_files.php on line 21
+[05-Feb-2015 14:59:26 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\www\public\sdk\adm\utils\get_files.php on line 21
+[05-Feb-2015 15:09:29 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_file_folder.php on line 9
+[05-Feb-2015 15:11:52 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_file_folder.php on line 9
+[06-Feb-2015 09:18:18 Europe/Moscow] PHP Parse error:  syntax error, unexpected '"' in C:\www\public\sdk\adm\utils\get_files.php on line 165
+[06-Feb-2015 09:18:47 Europe/Moscow] PHP Parse error:  syntax error, unexpected '"' in C:\www\public\sdk\adm\utils\get_files.php on line 165
+[06-Feb-2015 11:45:21 Europe/Moscow] PHP Warning:  unlink(../../documents/general_adm/��������� �.�. �������� ��������� ��������. ����� 1 (2001).pdf): No such file or directory in C:\www\public\sdk\adm\utils\delete_file.php on line 57
+[02-Mar-2015 14:49:56 Europe/Moscow] PHP Warning:  mkdir(): File exists in C:\www\public\sdk\adm\utils\create_file_folder.php on line 9

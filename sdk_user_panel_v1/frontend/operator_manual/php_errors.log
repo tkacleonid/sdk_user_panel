@@ -1,0 +1,2 @@
+[28-Feb-2015 20:45:04 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\www\public\sdk\frontend\utils\authorized.php on line 27
+[28-Feb-2015 20:46:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in C:\www\public\sdk\frontend\utils\utils.users.php on line 117

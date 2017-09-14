@@ -1,0 +1,13 @@
+[28-Feb-2015 23:31:22 Europe/Moscow] PHP Fatal error:  Function name must be a string in C:\www\public\sdk\frontend\my_profile\index.php on line 45
+[28-Feb-2015 23:31:26 Europe/Moscow] PHP Fatal error:  Function name must be a string in C:\www\public\sdk\frontend\my_profile\index.php on line 45
+[28-Feb-2015 23:33:19 Europe/Moscow] PHP Fatal error:  Function name must be a string in C:\www\public\sdk\frontend\my_profile\index.php on line 44
+[02-Mar-2015 18:10:34 Europe/Moscow] PHP Parse error:  syntax error, unexpected ':' in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 78
+[02-Mar-2015 18:11:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected ':' in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 78
+[02-Mar-2015 18:12:22 Europe/Moscow] PHP Parse error:  syntax error, unexpected ':' in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 78
+[02-Mar-2015 18:13:05 Europe/Moscow] PHP Parse error:  syntax error, unexpected ':' in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 78
+[02-Mar-2015 18:14:37 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'ЗАО ДИАГНОСТИКА' ,
+				address = 'Москва, Россия',' at line 2 in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 125
+[02-Mar-2015 18:15:25 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'ЗАО ДИАГНОСТИКА' ,
+				address = 'Москва, Россия',' at line 2 in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 125
+[02-Mar-2015 18:15:56 Europe/Moscow] PHP Warning:  mysql_query(): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'ЗАО ДИАГНОСТИКА' ,
+				address = 'Москва, Россия',' at line 2 in C:\www\public\sdk\frontend\my_profile\save_edit_hasp_user_information.php on line 125

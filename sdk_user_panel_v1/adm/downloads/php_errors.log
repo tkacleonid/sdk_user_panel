@@ -1,0 +1,3 @@
+[01-Mar-2015 23:09:34 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\downloads\get_group_downloads.php on line 63
+[02-Mar-2015 10:50:20 Europe/Moscow] PHP Warning:  mysql_query(): Incorrect string value: '\xD0\x9F\xD1\x80\xD0\xBE...' for column 'name' at row 1 in C:\www\public\sdk\adm\downloads\add_download.php on line 81
+[02-Mar-2015 14:30:53 Europe/Moscow] PHP Parse error:  syntax error, unexpected '"' in C:\www\public\sdk\adm\downloads\get_downloads.php on line 25

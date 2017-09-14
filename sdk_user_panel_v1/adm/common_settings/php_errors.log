@@ -1,0 +1,6 @@
+[01-Mar-2015 18:12:31 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\common_settings\index.php on line 49
+[01-Mar-2015 18:12:40 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}' in C:\www\public\sdk\adm\common_settings\index.php on line 49
+[01-Mar-2015 18:20:04 Europe/Moscow] PHP Parse error:  syntax error, unexpected '"1"' (T_CONSTANT_ENCAPSED_STRING) in C:\www\public\sdk\adm\common_settings\change_state_checkbox_common_setting.php on line 27
+[01-Mar-2015 18:20:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected '"1"' (T_CONSTANT_ENCAPSED_STRING) in C:\www\public\sdk\adm\common_settings\change_state_checkbox_common_setting.php on line 27
+[01-Mar-2015 18:22:05 Europe/Moscow] PHP Warning:  mysql_query(): Unknown column 'date_instal' in 'field list' in C:\www\public\sdk\adm\common_settings\change_state_checkbox_common_setting.php on line 18
+[01-Mar-2015 18:22:30 Europe/Moscow] PHP Warning:  mysql_query(): Unknown column 'date_instal' in 'field list' in C:\www\public\sdk\adm\common_settings\change_state_checkbox_common_setting.php on line 18
